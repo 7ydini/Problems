@@ -26,7 +26,7 @@ public class Main {
     public static ArrayList<String> Contacts(ArrayList<String> contacts, String partial, String name){
         switch (partial){
             case ("add"):{
-                if(!name.equals("add")){
+                if(!contacts.contains(name)){
                     contacts.add(name);
                     break;
                 }
